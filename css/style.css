@@ -74,7 +74,7 @@ img {
 /* Buttons */
 .btn{
     display:  inline-block;
-    padding:  .5em 2.5em;
+    padding:  1em 5em;
     background: var(--clr-accent);
     color: var(--clr-dark);
     text-decoration: none;
@@ -89,6 +89,7 @@ img {
 .btn:hover {
     transform: scale(1.1);
 }
+
 /*Topography*/
 
 h1,
@@ -293,13 +294,13 @@ header {
 
 .section__title--services {
     color: var(--clr-accent);
-    position: relative;
+    position: center;
 }
 
-.section__title--services::after {
+.section__title--services::after{
     content: '';
     display: block;
-    width: 2em;
+    width: 3em;
     height: 1px;
     margin: 0.5em auto 1em;
     background: var(--clr-light);
@@ -307,11 +308,17 @@ header {
 }
 
 .services {
-    margin-bottom: 2em;
+    margin-bottom: 4em;
 }
 .service {
-    max-width: 500px;
+    max-width: 1000px;
     margin: 0 auto;
+}
+
+.service p{
+    max-width: 400px;
+    margin: 0 auto;
+    
 }
 
 @media (min-width: 800px) {
@@ -323,7 +330,7 @@ header {
     }
 
     .service + .service {
-        margin-left: 2em;
+        margin-left: 5em;
     }
 }
 
@@ -350,7 +357,7 @@ header {
     .section__subtitle--about{
         grid-column: 1 / -1;
         grid-row:  2;
-        position: relative;
+        position: center;
         left: -1em;
         width: calc(100% + 2em);
         padding-left: 1em;
@@ -358,8 +365,9 @@ header {
     }
 
     .about-me__img{
+        box-shadow: var(--bs);
         grid-area: img;
-        position: relative;
+        position: center;
         z-index: 2; 
     }
 }
